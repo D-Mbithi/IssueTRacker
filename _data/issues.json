@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Fix login bug",
+        "description": "Users cannot log in with correct credentials.",
+        "status": "open"
+    },
+    {
+        "title": "Add dark mode",
+        "description": "Implement dark mode toggle in the settings.",
+        "status": "in_progress"
+    },
+    {
+        "title": "Update documentation",
+        "description": "Update API documentation with new endpoints.",
+        "status": "closed"
+    }
+]
