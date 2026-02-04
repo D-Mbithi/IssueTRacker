@@ -1,6 +1,6 @@
 import Issue from "../models/issue.js";
 import User from "../models/user.js";
-import { validateIssue } from "../utils/validate.js";
+import validateIssue from "../utils/validate.js";
 
 export const getAllIssues = async (req, res) => {
   try {
@@ -36,11 +36,16 @@ export const getIssueById = async (req, res) => {
 
 export const createIssue = async (req, res) => {
   try {
-    const { error } = validateIssue(req.body);
+   
 
-    if (error) {
-      return res.status(400).json({ error: error.details[0].message });
+    // validate the issue
+
+    const {error} = validateIssue(req.body)
+
+    if(error) {
+      return res.status(400).json({error: error.details[0].message})
     }
+
     const issue = new Issue(req.body);
     const result = await issue.save();
     res.status(201).json(result);

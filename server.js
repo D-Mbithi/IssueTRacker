@@ -13,6 +13,7 @@ app.use(express.json());
 // if you receive a request to /api/issues(Get, Post, Put, Delete)
 // delegate the request to issueRoutes
 app.use("/api/issues", issueRoutes);
+
 app.use("/api/auth", authRoutes);
 connectDB();
 

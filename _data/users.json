@@ -1,14 +1,17 @@
 [
-    {
-        "name": "John Doe",
-        "email": "john@example.com"
-    },
-    {
-        "name": "Jane Smith",
-        "email": "jane@example.com"
-    },
-    {
-        "name": "Admin User",
-        "email": "admin@example.com"
-    }
+  {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "password123"
+  },
+  {
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "password": "password123"
+  },
+  {
+    "name": "Admin User",
+    "email": "admin@example.com",
+    "password": "password123"
+  }
 ]

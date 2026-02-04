@@ -4,6 +4,10 @@ const issueSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
+    minLength: 3,
+    maxLength: 30,
+    Issue: true
+  
   },
   description: {
     type: String,
