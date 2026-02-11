@@ -4,7 +4,7 @@ import validateIssue from "../utils/validate.js";
 
 export const getAllIssues = async (req, res) => {
   try {
-    const issues = await Issue.find().populate("createdBy");
+    const issues = await Issue.find().populate("createdBy", "name email");
 
     res.status(200).json(issues);
   } catch (error) {
@@ -80,3 +80,8 @@ export const updateIssue = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+
+export const searchIssues = async (req, res) => {
+  
+}
